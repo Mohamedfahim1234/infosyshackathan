@@ -8,7 +8,6 @@
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "test": "jest",
-    "migrate": "node src/database/migrate.js",
     "seed": "node src/database/seed.js"
   },
   "dependencies": {
@@ -19,7 +18,7 @@
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
-    "sqlite3": "^5.1.6",
+    "mongoose": "^8.0.3",
     "qrcode": "^1.5.3",
     "nodemailer": "^6.9.7",
     "twilio": "^4.19.0",
@@ -28,13 +27,14 @@
     "express-validator": "^7.0.1",
     "compression": "^1.7.4",
     "express-session": "^1.17.3",
-    "connect-sqlite3": "^0.9.13",
+    "connect-mongo": "^5.1.0",
     "uuid": "^9.0.1",
     "sharp": "^0.32.6",
     "pdf-parse": "^1.1.1",
     "file-type": "^18.7.0",
     "sanitize-filename": "^1.6.3",
-    "express-slow-down": "^2.0.1"
+    "express-slow-down": "^2.0.1",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
